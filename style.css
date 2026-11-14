@@ -1,0 +1,172 @@
+
+/* General page styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef1f5;
+    color: #263445;
+    padding: 30px 15px;
+}
+
+/* Main container */
+
+.container {
+    max-width: 850px;
+    margin: auto;
+}
+
+/* Header */
+
+.header {
+    background-color: #17365d;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+.header h1 {
+    font-size: 27px;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: #d6e1ef;
+}
+
+/* Form area */
+
+.form-container {
+    background-color: white;
+    padding: 35px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.form-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-heading h2 {
+    color: #17365d;
+    margin-bottom: 8px;
+}
+
+.form-heading p {
+    color: #777;
+}
+
+/* Section headings */
+
+form h3 {
+    color: #17365d;
+    border-bottom: 2px solid #dce3ec;
+    padding-bottom: 10px;
+    margin: 25px 0 20px;
+}
+
+/* Input fields */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd4df;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+    background-color: #fafbfc;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #17365d;
+}
+
+.form-group textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+/* Buttons */
+
+.buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 30px;
+}
+
+button {
+    padding: 13px 22px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.submit-btn {
+    background-color: #17365d;
+    color: white;
+}
+
+.reset-btn {
+    background-color: #e2e7ed;
+    color: #263445;
+}
+
+.submit-btn:hover {
+    background-color: #244c79;
+}
+
+.reset-btn:hover {
+    background-color: #cbd3dd;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    color: #777;
+    padding: 20px;
+    font-size: 13px;
+}
+
+/* Mobile responsive design */
+
+@media (max-width: 600px) {
+
+    .form-container {
+        padding: 22px;
+    }
+
+    .header h1 {
+        font-size: 21px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
